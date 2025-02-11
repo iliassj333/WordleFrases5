@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle - Frase Misteriosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>¡Descubre la Frase!</h1>
+        <p>Escribe una palabra de 5 letras para revelar las letras en la frase:</p>
+
+        <div class="word-container" id="wordDisplay"></div>
+
+        <input type="text" id="guess" maxlength="5" placeholder="Palabra de 5 letras..." autofocus />
+        <button id="submit" onclick="checkWord()">Comprobar</button>
+        
+        <div id="message"></div>
+        <p>Intentos restantes: <span id="attempts">6</span></p>
+
+        <div class="keyboard" id="keyboard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
