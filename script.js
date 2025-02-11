@@ -1,4 +1,4 @@
-let secretPhrase = "Sara mira por la ventana".toLowerCase().split("");
+let secretPhrase = "Sara busca por la ventana".toLowerCase().split("");
 let displayedPhrase = secretPhrase.map(char => (char === " " ? " " : "_"));
 let attempts = 6;
 let usedLetters = new Set();
